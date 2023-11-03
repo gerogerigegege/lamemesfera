@@ -17,44 +17,18 @@ body {
     box-sizing: border-box;
 }
 
-h1 {
-    font-size: 56px; /* Tamaño de fuente para PC */
+h1.pixel-font {
+    font-family: 'Press Start 2P', sans-serif; /* Fuente pixeleada */
+    font-size: 56px;
 }
 
 .subtitle {
-    font-size: 30px; /* Tamaño de fuente para PC */
+    font-size: 30px;
     margin-top: 20px;
 }
 
-.newsletter-list {
-    list-style: none;
-    padding: 0;
-}
-
-.newsletter-list li {
-    font-size: 22px; /* Tamaño de fuente para PC */
-    margin-top: 10px;
-    text-transform: uppercase;
-}
-
-/* Media Query para pantallas de hasta 768px (tamaño de pantalla móvil) */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 24px; /* Tamaño de fuente para móvil */
-    }
-
-    .subtitle {
-        font-size: 16px; /* Tamaño de fuente para móvil */
-    }
-
-    .newsletter-list li {
-        font-size: 14px; /* Tamaño de fuente para móvil */
-    }
-}
-/* ... (código CSS anterior) */
-
 .authors {
-    font-size: 16px; /* Tamaño de fuente para PC */
+    font-size: 16px;
     margin-top: 10px;
 }
 
@@ -79,19 +53,26 @@ button:hover {
     opacity: 0;
     transition: opacity 0.5s;
 }
-/* ... (código CSS anterior) */
-
-.pixel-font {
-    font-family: 'Pixel', sans-serif; /* Cambiar a la fuente pixeleada deseada */
-    font-size: 44px; /* Tamaño de fuente para PC */
-}
-
-/* ... (código CSS anterior) */
-
-#xenodataText {
-    margin-top: 20px;
-}
 
 .hidden {
     display: none;
+}
+
+/* Media Query para pantallas de hasta 768px (tamaño de pantalla móvil) */
+@media (max-width: 768px) {
+    h1.pixel-font {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .authors {
+        font-size: 14px;
+    }
+
+    .newsletter-list li {
+        font-size: 14px;
+    }
 }
