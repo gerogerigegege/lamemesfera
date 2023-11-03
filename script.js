@@ -6,7 +6,6 @@ document.getElementById("emojiButton").addEventListener("click", function () {
     emojiContainer.textContent = randomEmoji;
     emojiContainer.style.opacity = 1;
 
-    // Desvanecer el emoji después de 2 segundos
     setTimeout(function () {
         emojiContainer.style.opacity = 0;
     }, 2000);
